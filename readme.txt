@@ -8,5 +8,7 @@ How do I use it?
 2. In terminal, navigate to the cloned directory OR to the one created by unzipping the downloaded file
 3. Run the command 'npm install' to install the sailthru-client dependency
 4. Run the following command to run the import job: 'node index.js <api_key> <api_secret> <filepath> <list name>'
---- The list name parameter is a list within Sailthru that users will be imported to, and is required for the "import" job to run
 
+A note on list names
+==========================
+The list name parameter is a list within Sailthru that users will be imported to, and is required for the "import" job to run. List names within Sailthru can contain whitespace characters. If you intend to use these in your list name, please be careful to treat your list name as a string, wrapping it in either single or double quotation marks.
